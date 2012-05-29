@@ -9,15 +9,15 @@ with [Project Fortress](http://java.net/projects/projectfortress/sources/sources
 
 ## Change Log
 
-vs. contributed code base: astgen_2009-05-15
+vs. contributed code base: `astgen_2009-05-15`
 
-CR000 Various stylistic and minor changes, e.g. StringBuffer -> StringBuilder, etc.
+CR000 Various stylistic and minor changes, e.g. `StringBuffer` -> `StringBuilder`, etc.
 
 CR001 Code for generation of field setter method added
 
-CR002 Change runtime dependency from edu.rice.cs.plt.lambda to kmworks.utils.generics
+CR002 Change runtime dependency from `edu.rice.cs.plt.lambda` to `kmworks.utils.generics`
 
-CR003 Added new DeepCopyVisitorGenerator
+CR003 Added new `DeepCopyVisitorGenerator`
 
 CR004 Remove generated-at date from header comment of generated classes because it forces a 
 useless new svn version on every generation run absent substantial changes.
