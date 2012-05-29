@@ -37,4 +37,4 @@ License for our changes, additions and enhancement to ASTGen, as outlined in Cha
 Copyright (c) 2012 Christian P. Lerch, Vienna, Austria.
 All rights reserved.
 
-Same BSD-style license as above.
+Same BSD-style license as above applies.
