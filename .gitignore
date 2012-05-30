@@ -1,17 +1,7 @@
-############
-## Windows
-############
-
-# Windows image file caches
-Thumbs.db 
-
-# Folder config file
-Desktop.ini
-
+/lib/
 /astgen/build/
 /astgen/dist/
 /astgen/nbproject/private/
 /astgen-ant/dist/
 /astgen-ant/build/
 /astgen-ant/nbproject/private/
-/bin/
