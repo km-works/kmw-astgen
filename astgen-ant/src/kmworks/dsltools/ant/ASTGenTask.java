@@ -52,7 +52,7 @@ public class ASTGenTask extends Task {
   @Override
   public void execute() throws BuildException {
     if (_file == null) {
-      throw new BuildException("ASTGen requires a <file> argument!");
+      throw new BuildException("ASTGen requires an input <file> argument!");
     } else {
       try {
         new ASTGen(new FileReader(_file), _file.getParentFile()).generate();
