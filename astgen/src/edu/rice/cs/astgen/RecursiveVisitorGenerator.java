@@ -162,6 +162,7 @@ public abstract class RecursiveVisitorGenerator extends VisitorGenerator {
         return Option.none();
       }
     }
+    
   }
 
   /**
@@ -210,4 +211,6 @@ public abstract class RecursiveVisitorGenerator extends VisitorGenerator {
 
     public abstract Void forTupleClass(TupleClassName t);
   }
+
+  
 }

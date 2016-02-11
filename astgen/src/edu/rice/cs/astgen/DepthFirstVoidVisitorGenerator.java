@@ -188,9 +188,11 @@ public class DepthFirstVoidVisitorGenerator extends RecursiveVisitorGenerator {
         }
         return null;
       }
+      
     });
 
     writer.unindent();
     writer.startLine("}");
   }
+  
 }

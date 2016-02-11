@@ -93,4 +93,6 @@ public class ToStringGenerator extends CodeGenerator {
     copyFromResource(writer, "ToStringWalker.java", "package");
     writer.close();
   }
+  
+  
 }

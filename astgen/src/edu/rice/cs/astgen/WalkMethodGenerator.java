@@ -249,6 +249,7 @@ public class WalkMethodGenerator extends CodeGenerator {
         writer.unindent();
         writer.startLine("}");
       }
+      
     });
   }
 
@@ -258,4 +259,5 @@ public class WalkMethodGenerator extends CodeGenerator {
     copyFromResource(writer, "TreeWalker.java", "package");
     writer.close();
   }
+  
 }

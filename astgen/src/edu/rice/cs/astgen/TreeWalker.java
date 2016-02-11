@@ -165,8 +165,8 @@ public abstract class TreeWalker {
   /** Visit a float primitive. */
   public void visitFloat(float f) {
   }
-
   /** Visit a double primitive. */
+
   public void visitDouble(double d) {
   }
 }

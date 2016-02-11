@@ -119,4 +119,5 @@ public class VisitorInterfaceGenerator extends VisitorGenerator {
     writer.println();
     writer.close();
   }
+  
 }

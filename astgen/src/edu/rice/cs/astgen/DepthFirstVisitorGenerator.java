@@ -255,6 +255,7 @@ public class DepthFirstVisitorGenerator extends RecursiveVisitorGenerator {
         writer.startLine("return " + resultTupT.constructor(resultElts) + ";");
         return null;
       }
+      
     });
 
     writer.unindent();
@@ -372,4 +373,5 @@ public class DepthFirstVisitorGenerator extends RecursiveVisitorGenerator {
       return "get" + t.identifierName() + "()";
     }
   }
+  
 }

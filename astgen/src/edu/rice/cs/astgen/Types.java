@@ -311,6 +311,7 @@ public final class Types {
       }
     });
   }
+  
   public static final Lambda<TypeArgumentName, String> GET_NAME = new Lambda<TypeArgumentName, String>() {
 
     public String value(TypeArgumentName t) {
@@ -596,6 +597,7 @@ public final class Types {
       INSTANCES.put("float", new ConcretePrimitiveName("float", ConcreteClassName.FLOAT));
       INSTANCES.put("double", new ConcretePrimitiveName("double", ConcreteClassName.DOUBLE));
     }
+      
     private final String _name;
     private final TypeName _boxed;
 
@@ -814,6 +816,7 @@ public final class Types {
       result.append(";");
       return result.toString();
     }
+    
   }
 
   private static class SeededReferenceArrayName extends ConcreteReferenceArrayName {
@@ -889,6 +892,7 @@ public final class Types {
     private static final ClassName LONG = new ConcreteClassName("java.lang.Long");
     private static final ClassName FLOAT = new ConcreteClassName("java.lang.Float");
     private static final ClassName DOUBLE = new ConcreteClassName("java.lang.Double");
+    
     private final String _cName;
     private final List<TypeArgumentName> _targs;
 
@@ -1050,6 +1054,7 @@ public final class Types {
       CLASSES.add("Octet");
       CLASSES.add("edu.rice.cs.plt.tuple.Octet");
     }
+    
     private final List<TypeName> _eltTs;
 
     public PLTTupleClassName(String cName, Iterable<? extends TypeArgumentName> targs) {
@@ -1117,6 +1122,7 @@ public final class Types {
 
       SIZE_CONS_CLASSES.add("java.util.ArrayList");
     }
+    
     protected final TypeName _eltT;
     protected final String _accumClass;
     protected final String _sizeExpr; // may be an empty string (no size available) or null (size not supported)

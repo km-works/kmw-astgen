@@ -170,7 +170,7 @@ public class Field {
   }
 
   public String getFieldDefinition() {
-    return "private " + _type.name() + " _" + _name + ";";  ///* <CR000/> "private final " useless: removed
+    return "private " + _type.name() + " _" + _name + ";";  ///* <CR000/> "private final " useless -> removed
   }
 
   public String getFieldInitialization() {

@@ -45,24 +45,34 @@ import java.util.*;
 public class Options {
 
   private File _basedir;
+  
   /** Name of the directory in which to place the generated source */
   public String outputDir = ".";
+  
   /** Package to which all generated classes belong */
   public String packageName = "";
+  
   /** Import statements to add to every generated class */
   public LinkedList<String> imports = new LinkedList<String>();
+  
   /** Name of the generated visitor method in AST classes */
   public String visitMethod = "visit";
+  
   /** Prefix of generated vistor classes' methods (e.g., forMyAstWidget) */
   public String visitorMethodPrefix = "for";
+  
   /** Whether top nodes in the hierarchy are automatically roots for visiting. */
   public boolean automaticRoots = true;
+  
   /** Should the AST classes' field accessors have a "get" prefix? (e.g., getSomeField()) */
   public boolean addGetterPrefixes = true;
+    
   /** Allow the generated code to depend on the PLT Utilities library? */
   public boolean usePLT = false;
+  
   /** Should generated tests to insure that AST classes' field values are never null be omitted? */
   public boolean allowNulls = false;
+  
   public boolean generateToString = true;
   public boolean generateEquals = true;
   public boolean generateAbstractVisitors = true;
@@ -70,6 +80,7 @@ public class Options {
   public boolean generateVoidVisitors = true;
   public boolean generateSerializers = false;
   public boolean generateEmptyConstructor = false;
+  
   /** Number of additional indentation spaces used to indicate a lower level in the hierarchy */
   public int tabSize = 2;
 
@@ -132,4 +143,5 @@ public class Options {
       writer.println();
     }
   }
+  
 }

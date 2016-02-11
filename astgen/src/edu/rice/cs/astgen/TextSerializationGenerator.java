@@ -423,6 +423,8 @@ public class TextSerializationGenerator extends CodeGenerator {
         return Pair.make("(" + t.name() + ") readUnknownObject()",
                 !IterUtil.isEmpty(t.typeArguments()));
       }
+      
     });
   }
+  
 }

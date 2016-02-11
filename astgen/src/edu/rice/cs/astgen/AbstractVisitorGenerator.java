@@ -95,4 +95,5 @@ public class AbstractVisitorGenerator extends VisitorGenerator {
     writer.println();
     writer.close();
   }
+  
 }

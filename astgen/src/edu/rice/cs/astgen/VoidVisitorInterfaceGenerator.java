@@ -119,4 +119,5 @@ public class VoidVisitorInterfaceGenerator extends VisitorGenerator {
     writer.println();
     writer.close();
   }
+  
 }

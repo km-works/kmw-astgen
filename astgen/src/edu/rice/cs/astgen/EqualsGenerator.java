@@ -225,6 +225,7 @@ public class EqualsGenerator extends CodeGenerator {
       private void checkIdentical(TypeName t) {
         writer.startLine("if (!(" + name1 + " == " + name2 + ")) return false;");
       }
+      
     });
   }
 
@@ -350,9 +351,12 @@ public class EqualsGenerator extends CodeGenerator {
         }
         writer.print(name + ".hashCode();");
       }
+      
     });
   }
+  
 
   public void generateAdditionalCode() {
   }
+  
 }

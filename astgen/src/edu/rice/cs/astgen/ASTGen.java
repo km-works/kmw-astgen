@@ -91,7 +91,7 @@ public class ASTGen {
         _generators.add(AbstractVoidVisitorGenerator.class);
         _generators.add(DepthFirstVisitorGenerator.class);
         _generators.add(DepthFirstVoidVisitorGenerator.class);
-        _generators.add(DeepCopyVisitorGenerator.class);	///+ <CR/>
+        _generators.add(DeepCopyVisitorGenerator.class);	///+ <CR003/>
         _generators.add(UpdateVisitorGenerator.class);
         _generators.add(ToStringGenerator.class);
         _generators.add(EqualsGenerator.class);

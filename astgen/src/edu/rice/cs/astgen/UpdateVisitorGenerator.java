@@ -271,6 +271,7 @@ public class UpdateVisitorGenerator extends RecursiveVisitorGenerator {
         writer.startLine("}");
         return null;
       }
+      
     });
     writer.unindent();
     writer.startLine("}");

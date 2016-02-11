@@ -81,6 +81,7 @@ public abstract class VisitorGenerator extends CodeGenerator {
     }
   }
 
+  
   protected void outputDefaultCaseMethod(TabPrintWriter writer, NodeType root) {
     writer.startLine("/**");
     writer.startLine(" * This method is run for all cases that are not handled elsewhere.");

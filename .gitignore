@@ -1,7 +1,6 @@
-/lib/
-/astgen/build/
-/astgen/dist/
-/astgen/nbproject/private/
-/astgen-ant/dist/
-/astgen-ant/build/
-/astgen-ant/nbproject/private/
+lib/
+build/
+dist/
+nbproject/private/
+*.class
+*.jar
