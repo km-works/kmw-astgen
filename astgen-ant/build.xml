@@ -4,11 +4,7 @@
     <import file="nbproject/build-impl.xml"/>
 
     <property environment="env"/>
-    <target name="-post-jar" depends="post-jar-libs">
-      <echo message="Deploying ${dist.jar} to local project lib"/>
-      <copy file="${dist.jar}" todir="../lib/"/>
-    </target>
-    <target name="post-jar-libs" if="env.JAVA_LIBS">
+    <target name="post-jar" if="env.JAVA_LIBS">
       <echo message="Deploying ${dist.jar} to env project lib"/>
       <copy file="${dist.jar}" todir="${env.JAVA_LIBS}/km-works/"/>
     </target>

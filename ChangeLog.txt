@@ -7,7 +7,8 @@ CR000 Various stylistic and minor changes, e.g. `StringBuffer` -> `StringBuilder
 
 CR001 Code for generation of field setter methods added; make nodes modifyable
 
-CR002 Remove runtime dependency to edu.rice.cs.plt.lambda.Lambda from generated code
+CR002 Remove hard-coded runtime dependency to edu.rice.cs.plt from generated code. As a 
+consequence an appropriate import should be added to the AST definition file.
 
 CR003 Added new `DeepCopyVisitorGenerator`
 
