@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="kmw-astgen" default="default" basedir=".">
+    <description>Builds, tests, and runs the project kmw-astgen.</description>
+    <import file="nbproject/build-impl.xml"/>
+    
+    <target name="-pre-jar">
+      <property name="src.java" value="${src.dir}/edu/rice/cs/astgen"/>
+      <property name="dst.java" value="${build.dir}/classes/edu/rice/cs/astgen"/>
+      <copy file="${src.java}/LosslessStringWalker.java" todir="${dst.java}" />
+      <copy file="${src.java}/TabPrintWriter.java" todir="${dst.java}" />
+      <copy file="${src.java}/ToStringWalker.java" todir="${dst.java}" />
+      <copy file="${src.java}/TreeWalker.java" todir="${dst.java}" />
+    </target>
+    
+    <property environment="env"/>
+    <target name="-post-jar" depends="post-jar-libs">
+      <copy file="${dist.jar}" todir="../lib/"/>
+    </target>
+    <target name="post-jar-libs" if="env.JAVA_LIBS">
+      <copy file="${dist.jar}" todir="${env.JAVA_LIBS}/km-works/"/>
+    </target>
+
+</project>
